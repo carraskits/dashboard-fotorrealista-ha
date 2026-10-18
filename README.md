@@ -23,4 +23,13 @@ Optimized and lightweight YAML template to create a photorealistic and interacti
 4. **Configure your entities:** Replace the light, camera, and sensor IDs with those of your own installation.
 
 ---
+
 🔗 **Want to watch the step-by-step tutorial?** Visit my YouTube channel: [Carraskits | Conectando Mundos](https://www.youtube.com/@carraskits)
+
+---
+
+### 🎥 Real-Time 2-Minute Workflow Demo
+
+[![Watch Photorealistic Dashboard Demo](https://img.youtube.com/vi/placeholder/maxresdefault.jpg)](https://www.reddit.com/r/homeassistant/s/G740lnIf4x)
+
+👉 **[Watch the full 2-minute setup video on Reddit](https://www.reddit.com/r/homeassistant/s/G740lnIf4x)**
