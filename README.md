@@ -1,26 +1,26 @@
-# 🌟 Dashboard Fotorrealista para Home Assistant (Método Carraskits)
+# 🌟 Photorealistic Dashboard for Home Assistant (Carraskits Method)
 
-Plantilla YAML optimizada y ligera para crear un dashboard fotorrealista e interactivo en pocos minutos, diseñada por **@Carraskits | Conectando Mundos**.
+Optimized and lightweight YAML template to create a photorealistic and interactive dashboard in just a few minutes, designed by **@Carraskits | Conectando Mundos**.
 
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Dashboard-blue?style=for-the-badge&logo=home-assistant)
-![Método Carraskits](https://img.shields.io/badge/Método-Fotorrealista%20sin%203D-orange?style=for-the-badge)
+![Carraskits Method](https://img.shields.io/badge/Method-Photorealistic%20without%203D-orange?style=for-the-badge)
 
 ---
 
-## 🚀 Características Principales
-- 📸 **Fotografía real en trípode:** Olvídate del complejo modelado 3D.
-- 💡 **Efecto de iluminación profesional:** Uso de `mix-blend-mode: screen` para un realismo absoluto en las luces.
-- 📱 **Diseño Responsive:** Adaptado mediante funciones CSS `clamp()` para tablets de pared y móviles.
-- ⚡ **Alto rendimiento:** Capas condicionales que solo se renderizan cuando las entidades están activas.
+## 🚀 Key Features
+- 📸 **Real tripod photography:** Forget about complex 3D modeling.
+- 💡 **Professional lighting effect:** Uses `mix-blend-mode: screen` for absolute realism in lights.
+- 📱 **Responsive Design:** Adapted via CSS `clamp()` functions for wall tablets and mobile phones.
+- ⚡ **High performance:** Conditional layers that only render when entities are active.
 
 ---
 
-## 🛠️ Instrucciones de Instalación
+## 🛠️ Installation Instructions
 
-1. **Sube tus imágenes:** Coloca tus fotos base y las variantes con la iluminación encendida dentro de la carpeta `/local/floorplan/` de tu Home Assistant.
-2. **Copia el código YAML:** Utiliza el archivo `entrada-pasillo.yaml` incluido en este repositorio.
-3. **Pega en tu panel:** Crea una vista en blanco en tu Home Assistant, edita la tarjeta en modo YAML y pega el contenido.
-4. **Configura tus entidades:** Reemplaza los IDs de luces, cámaras y sensores por los de tu propia instalación.
+1. **Upload your images:** Place your base photos and lighting-on variants inside the `/local/floorplan/` folder of your Home Assistant.
+2. **Copy the YAML code:** Use the `entrada-pasillo.yaml` file included in this repository.
+3. **Paste into your dashboard:** Create a blank view in Home Assistant, edit the card in YAML mode, and paste the content.
+4. **Configure your entities:** Replace the light, camera, and sensor IDs with those of your own installation.
 
 ---
-🔗 **¿Quieres ver el tutorial paso a paso?** Visita mi canal de YouTube: [Carraskits | Conectando Mundos](https://www.youtube.com/@carraskits)
+🔗 **Want to watch the step-by-step tutorial?** Visit my YouTube channel: [Carraskits | Conectando Mundos](https://www.youtube.com/@carraskits)
