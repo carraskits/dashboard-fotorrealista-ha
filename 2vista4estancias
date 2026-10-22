@@ -1,0 +1,1045 @@
+type: sections
+max_columns: 4
+title: ESTANCIAS HOGAR
+path: estancias-hogar
+icon: mdi:compass-rose
+subview: false
+show_icon_and_title: true
+sections:
+  - type: grid
+    cards:
+      - type: picture-elements
+        elements:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.salon_grupo_comedor
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                image:
+                  media_content_id: local/floorplan/aCOMEDORluzzzz.jpeg?v=1
+                  metadata:
+                    title: aCOMEDORluzzzz.jpeg
+                    thumbnail: /api/image/serve/7b13db42cc0e8f42b9d403f65114aa4e/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                entity: light.salon_grupo_comedor
+          - type: state-icon
+            style:
+              left: 10%
+              top: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.salon_grupo_comedor
+            tap_action:
+              action: toggle
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.salon_grupo_mesa
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                entity: light.salon_grupo_mesa
+                tap_action:
+                  action: toggle
+                image:
+                  media_content_id: local/floorplan/MESAluzzzz.jpeg?v=2
+                  media_content_type: image/jpeg
+                  metadata:
+                    title: MESAluzzzz.jpeg
+                    thumbnail: /api/image/serve/8d21bcc9b26ad109fc426b7e625f00a2/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 78%
+              top: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.salon_grupo_mesa
+            tap_action:
+              action: toggle
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.salon_grupo_sofa
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                image:
+                  media_content_id: local/floorplan/SOFAluzzzz.jpeg?v=2
+                  media_content_type: image/jpeg
+                  metadata:
+                    title: SOFAluzzzz.jpeg
+                    thumbnail: /api/image/serve/512efe39158aa6e4fa0ceb9bdce15266/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 10%
+              top: 60%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.salon_grupo_sofa
+            tap_action:
+              action: toggle
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.salon_grupo_tele
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                entity: light.salon_grupo_tele
+                image:
+                  media_content_id: local/floorplan/TELEluzzzz.jpeg?v=2
+                  media_content_type: image/jpeg
+                  metadata:
+                    title: TELEluzzzz.jpeg
+                    thumbnail: /api/image/serve/219faa7c47def4ee9e6fc27b1db18e31/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 60%
+              top: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.salon_grupo_tele
+            tap_action:
+              action: toggle
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.cocina_luz_cocina
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                entity: light.cocina_luz_cocina
+                tap_action:
+                  action: toggle
+                image:
+                  media_content_id: local/floorplan/COCINAluzzzz.jpeg?v=2
+                  media_content_type: image/jpeg
+                  metadata:
+                    title: COCINAluzzzz.jpeg
+                    thumbnail: /api/image/serve/e69bd6b5672eb7e79abaca46ce61c2f0/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 25%
+              top: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.cocina_luz_cocina
+            tap_action:
+              action: toggle
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.luz_lavabo
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                entity: light.luz_lavabo
+                tap_action:
+                  action: toggle
+                image:
+                  media_content_id: local/floorplan/LAVABOluzzzz.jpeg?v=2
+                  media_content_type: image/jpeg
+                  metadata:
+                    title: LAVABOluzzzz.jpeg
+                    thumbnail: /api/image/serve/255c225abba461369dc53b27c4d49c70/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 42%
+              top: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.luz_lavabo
+            tap_action:
+              action: toggle
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.led_cuadro
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                entity: light.led_cuadro
+                tap_action:
+                  action: toggle
+                image:
+                  media_content_id: local/floorplan/CUADROledddd.jpeg?v=2
+                  media_content_type: image/jpeg
+                  metadata:
+                    title: CUADROledddd.jpeg
+                    thumbnail: /api/image/serve/d8d46adb299a3372f149c38b8d316e7d/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 95%
+              top: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.led_cuadro
+            tap_action:
+              action: toggle
+          - type: state-icon
+            style:
+              left: 61%
+              top: 48%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: media_player.lg_nano
+            icon: mdi:television
+          - type: state-badge
+            entity: camera.camara_salon_vista_en_vivo
+            name: SALÓN
+            style:
+              top: 85%
+              left: 85%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-icon
+            entity: media_player.eco_casa
+            icon: mdi:card-account-details-outline
+            tap_action:
+              action: more-info
+            hold_action:
+              action: more-info
+            title: ECO CASA
+            style:
+              top: 49%
+              left: 35%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 6px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 40px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-label
+            entity: sensor.temperatura_media_salon
+            prefix: '🌡️ '
+            style:
+              top: 85%
+              left: 10%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 5px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 1px)
+              box-shadow: 0 0 6px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(40px, 5vw, 80px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-label
+            entity: sensor.humedad_media_salon
+            prefix: '💧 '
+            style:
+              top: 85%
+              left: 40%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 5px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 1px)
+              box-shadow: 0 0 6px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(40px, 5vw, 80px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-icon
+            entity: weather.electricidad_managment_forecast_home
+            style:
+              left: 25%
+              top: 85%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 5px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(8px, 0.8vw, 20px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(40px, 5vw, 80px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-icon
+            entity: climate.aire_acondicionado
+            icon: mdi:air-conditioner
+            tap_action:
+              action: more-info
+            hold_action:
+              action: more-info
+            state_color: true
+            style:
+              top: 85%
+              left: 60%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 40%
+              padding: clamp(1px, 0.8vw, 10px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+        dark_mode_image:
+          media_content_id: local/floorplan/OFFSALONokkkkk.jpeg?v=2
+          media_content_type: image/jpeg
+          metadata:
+            title: OFFSALONokkkkk.jpeg
+            thumbnail: /api/image/serve/70c0df6fa0b6477097dd6df9f4a29bef/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+        image:
+          media_content_id: local/floorplan/OFFSALONokkkkk.jpeg?v=2
+          media_content_type: image/jpeg
+          metadata:
+            title: OFFSALONokkkkk.jpeg
+            thumbnail: /api/image/serve/dc9e503afca40b4ba94d8e4ea71a94e5/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+        grid_options:
+          columns: 24
+          rows: auto
+    column_span: 2
+  - type: grid
+    cards:
+      - type: picture-elements
+        elements:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.dormitorio_luz_bola
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                image:
+                  media_content_id: local/floorplan/BOLAon.jpg?v=3
+                  media_content_type: image/jpg
+                  metadata:
+                    title: BOLAon.jpg
+                    thumbnail: /api/image/serve/b78506d87c17c882d078c68c6b660c53/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+                entity: light.dormitorio_luz_bola
+                tap_action:
+                  action: toggle
+          - type: state-icon
+            style:
+              left: 83%
+              top: 13%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.dormitorio_luz_bola
+            tap_action:
+              action: toggle
+            icon: mdi:light-recessed
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.dormitorio_bombilla
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                entity: light.dormitorio_bombilla
+                tap_action:
+                  action: toggle
+                image:
+                  media_content_id: local/floorplan/bombillaON.jpg?v=3
+                  media_content_type: image/jpg
+                  metadata:
+                    title: bombillaON.jpg
+                    thumbnail: /api/image/serve/02a76e62a84bdd7c863fb3b888a4b6e9/256x256
+                    media_class: image
+                    navigateIds:
+                      - {}
+                      - media_content_type: app
+                        media_content_id: media-source://image_upload
+          - type: state-icon
+            style:
+              left: 61%
+              top: 48%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.dormitorio_bombilla
+            tap_action:
+              action: toggle
+            icon: mdi:lamp
+          - type: state-badge
+            entity: camera.camara_cuna_vista_en_vivo
+            name: CUNA
+            style:
+              top: 50%
+              left: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 4vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            tap_action:
+              action: more-info
+          - type: state-badge
+            style:
+              left: 16%
+              top: 80%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: person.carraskits
+            name: CARRASKITS
+          - type: state-badge
+            style:
+              left: 5%
+              top: 80%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: person.flor_roxana
+            name: FLOR
+          - type: state-icon
+            style:
+              left: 11%
+              top: 12%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 4vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 4vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: binary_sensor.stick_tv_conectividad
+            icon: mdi:television
+        dark_mode_image:
+          media_content_id: local/floorplan/HABoff.jpg?v=3
+          media_content_type: image/jpg
+          metadata:
+            title: HABoff.jpg
+            thumbnail: /api/image/serve/9f455af5787da705af84eb8f88c50130/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+        image:
+          media_content_id: local/floorplan/HABoff.jpg?v=3
+          media_content_type: image/jpg
+          metadata:
+            title: HABoff.jpg
+            thumbnail: /api/image/serve/0c23c35477193c310487745a09ee4756/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+        grid_options:
+          columns: 24
+          rows: auto
+    column_span: 2
+  - type: grid
+    cards:
+      - type: picture-elements
+        image: /local/floorplan/APAGADO ESTUDIO.png?v=1
+        dark_mode_image: /local/floorplan/APAGADO ESTUDIO.png?v=1
+        elements:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: light.salon_lampara
+                state: 'on'
+            elements:
+              - type: image
+                image: /local/floorplan/LAMPARA ON.png?v=2
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: light.luz_indicador
+                state: 'on'
+            elements:
+              - type: image
+                image: local/floorplan/LUZ INDICADOR ON.png?v=2
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+          - type: image
+            entity: light.dados_led
+            image: local/floorplan/DADOS LED ON.png?v=2
+            tap_action:
+              action: toggle
+            style:
+              left: 36%
+              top: 35%
+              width: 15%
+              filter: none
+          - type: state-icon
+            entity: light.luz_indicador
+            icon: mdi:globe-light
+            tap_action:
+              action: toggle
+            style:
+              left: 80%
+              top: 9%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-icon
+            entity: light.salon_lampara
+            tap_action:
+              action: toggle
+            style:
+              left: 29%
+              top: 75%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: image
+            entity: light.luz_indicador
+            image: local/floorplan/ON.png?v=1
+            tap_action:
+              action: toggle
+            style:
+              left: 51%
+              top: 60%
+              width: 8%
+          - type: image
+            entity: light.terrado_led_estudio
+            image: local/floorplan/ICON HAKUNA.png?v=2
+            tap_action:
+              action: toggle
+            style:
+              left: 47.5%
+              top: 25%
+              width: 12%
+          - type: image
+            entity: media_player.tele_nano_lg
+            image:
+              media_content_id: local/floorplan/TV LED.png?v=1
+            tap_action:
+              action: toggle
+            style:
+              left: 60%
+              top: 38%
+              width: 20%
+          - type: state-icon
+            entity: climate.aire_acondicionado
+            style:
+              left: 10%
+              top: 30%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-icon
+            style:
+              left: 85%
+              top: 85%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: switch.enchufe_pasillo
+            tap_action:
+              action: toggle
+          - type: state-badge
+            entity: camera.camara_barbacoa
+            style:
+              top: 80%
+              left: 10%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            name: TERRAZA
+          - type: state-badge
+            style:
+              top: 80%
+              left: 20%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: camera.la_calle_instantaneas_fluido
+            name: CALLE
+        grid_options:
+          columns: 24
+          rows: auto
+    column_span: 2
+  - type: grid
+    cards:
+      - type: picture-elements
+        elements:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.entrada_luz_entrada
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                image:
+                  media_content_id: /local/floorplan/ENTRADA ON OK.png?v=2
+                  media_content_type: ''
+                  metadata:
+                    navigateIds:
+                      - {}
+                      - media_content_type: ''
+                        media_content_id: __MANUAL_ENTRY__
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+          - type: conditional
+            conditions:
+              - condition: state
+                entity_id: light.entrada_luz_escaleras
+                state:
+                  - 'on'
+            elements:
+              - type: image
+                image:
+                  media_content_id: local/floorplan/ESCALERA ON OK.png?v=2
+                  media_content_type: ''
+                  metadata:
+                    navigateIds:
+                      - {}
+                      - media_content_type: ''
+                        media_content_id: __MANUAL_ENTRY__
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+          - type: conditional
+            conditions:
+              - condition: device
+                type: is_on
+                device_id: 5077ae54afb1c73fc90a56e8f5dfb9e3
+                entity_id: cbcf8cc6e5d7d93c3d12b00d8c6c2c66
+                domain: light
+            elements:
+              - type: image
+                style:
+                  top: 50%
+                  left: 50%
+                  width: 100%
+                  transform: translate(-50%, -50%)
+                  mix-blend-mode: screen
+                  pointer-events: none
+                image:
+                  media_content_id: local/floorplan/PASILLO ON OK.png?v=2
+                  media_content_type: ''
+                  metadata:
+                    navigateIds:
+                      - {}
+                      - media_content_type: ''
+                        media_content_id: __MANUAL_ENTRY__
+                entity: light.luz_pasillo
+                tap_action:
+                  action: toggle
+          - type: state-icon
+            entity: light.entrada_luz_entrada
+            icon: mdi:globe-light
+            tap_action:
+              action: toggle
+            style:
+              left: 70%
+              top: 20%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-icon
+            style:
+              left: 50%
+              top: 20%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: light.luz_pasillo
+            icon: mdi:ceiling-light-outline
+            tap_action:
+              action: toggle
+          - type: state-icon
+            entity: light.entrada_luz_escaleras
+            tap_action:
+              action: toggle
+            style:
+              left: 30%
+              top: 20%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-badge
+            entity: camera.camara_barbacoa
+            style:
+              top: 20%
+              left: 15%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 14px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(20px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            name: TERRAZA
+          - type: state-badge
+            style:
+              top: 20%
+              left: 85%
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              --mdc-icon-size: clamp(10px, 5vw, 50px)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: camera.la_calle_instantaneas_fluido
+            name: CALLE
+          - type: state-badge
+            entity: binary_sensor.contacto_puerta_principal_contact
+            name: Puerta Entrada
+            style:
+              left: 85%
+              top: 70%
+              font-size: clamp(10%, 1.5vw, 100%)
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 6px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+          - type: state-badge
+            style:
+              left: 15%
+              top: 70%
+              font-size: clamp(10%, 1.5vw, 100%)
+              color: '#FFE082'
+              background: rgba(255,193,7,0.14)
+              border: 3px solid rgba(255,220,120,0.35)
+              border-radius: 20%
+              padding: clamp(1px, 0.8vw, 5px)
+              box-shadow: 0 0 8px rgba(255,210,100,0.45)
+              transform: translate(-50%, -50%)
+              box-sizing: border-box
+            entity: person.family_hogar_samsung
+            name: TABLET
+        image:
+          media_content_id: /local/floorplan/APAGADO ENTRADA OK.png?v=2
+          media_content_type: image/png
+          metadata:
+            title: APAGADO ENTRADA OK.png
+            thumbnail: /api/image/serve/fdd5127d6f9248c2c3596da9f7d6aea6/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+        dark_mode_image:
+          media_content_id: /local/floorplan/APAGADO ENTRADA OK.png?v=2
+          media_content_type: image/png
+          metadata:
+            title: APAGADO ENTRADA OK.png
+            thumbnail: /api/image/serve/319d4dcff34f585b00aeb451f2b73a23/256x256
+            media_class: image
+            navigateIds:
+              - {}
+              - media_content_type: app
+                media_content_id: media-source://image_upload
+        grid_options:
+          columns: 24
+          rows: auto
+    column_span: 2
+cards: []
+background:
+  opacity: 100
+  alignment: center
+  size: cover
+  repeat: repeat
+  attachment: fixed
+  image:
+    media_content_id: /local/floorplan/LUNA.jpg?v=1
+    media_content_type: image/jpg
+    metadata:
+      title: LUNA.jpg
+      thumbnail: /api/image/serve/460e250c906408aa2990100f22dd3154/256x256
+      media_class: image
+      navigateIds:
+        - {}
+        - media_content_type: app
+          media_content_id: media-source://image_upload
