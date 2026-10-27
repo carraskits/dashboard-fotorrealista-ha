@@ -1,17 +1,18 @@
-# 🌟 Photorealistic Dashboard for Home Assistant (Carraskits Method)
+ 🌟 Photorealistic Dashboard for Home Assistant (Carraskits Method)
 
-Optimized and lightweight YAML template to create a photorealistic and interactive dashboard in just a few minutes, designed by **@Carraskits | Conectando Mundos**.
-
-![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Dashboard-blue?style=for-the-badge&logo=home-assistant)
-![Carraskits Method](https://img.shields.io/badge/Method-Photorealistic%20without%203D-orange?style=for-the-badge)
+Optimized and lightweight YAML template to create a photorealistic and interactive dashboard in Home Assistant, designed by **Eric Carrasco Gabarrón (@Carraskits | Conectando Mundos)**.
 
 ---
 
-## 🚀 Key Features
-- 📸 **Real tripod photography:** Forget about complex 3D modeling.
-- 💡 **Professional lighting effect:** Uses `mix-blend-mode: screen` for absolute realism in lights.
-- 📱 **Responsive Design:** Adapted via CSS `clamp()` functions for wall tablets and mobile phones.
-- ⚡ **High performance:** Conditional layers that only render when entities are active.
+# 🚀 Key Features & Workflow
+
+* 📸 **Real tripod photography:** Forget about complex 3D modeling. Uses real photos of your own home.
+
+
+* ⏱️ **Estimated Setup Time:** Approximately **5 hours of work per room** with experience (covering planning, photography, processing, and YAML configuration).
+* 💡 **Professional lighting effect:** Uses `mix-blend-mode: screen` for absolute realism in lights.
+* 📱 **Responsive Design:** Adapted via CSS `clamp()` functions for wall tablets and mobile phones.
+* ⚡ **High performance:** Conditional layers that only render when entities are active.
 
 ---
 
@@ -28,8 +29,6 @@ Optimized and lightweight YAML template to create a photorealistic and interacti
 
 ---
 
-### 🎥 Real-Time 2-Minute Workflow Demo
+### 🎥 Real-Time Workflow Demo
 
-[![Watch Photorealistic Dashboard Demo](https://img.youtube.com/vi/placeholder/maxresdefault.jpg)](https://www.reddit.com/r/homeassistant/s/G740lnIf4x)
-
-👉 **[Watch the full 2-minute setup video on Reddit](https://www.reddit.com/r/homeassistant/s/G740lnIf4x)**
+👉 **[Watch the full setup video on Reddit](https://www.google.com/search?q=https%3A%2F%2Fwww.reddit.com%2Fr%2Fhomeassistant%2Fs%2FG740lnIf4x)**
